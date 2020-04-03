@@ -68,6 +68,15 @@ header .splash-caption a {
   color: #ffffff;
 }
 
+/* Services */
+.Services .container {
+  text-align: center;
+}
+
+.Services .row .box {
+  display: inline-block;
+}
+
 /* Footer */
 .social-links {
   padding: 20px 0;
