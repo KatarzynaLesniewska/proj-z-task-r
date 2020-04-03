@@ -1,0 +1,53 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Footer */
+.social-links {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: left;
+      justify-content: left;
+}
+
+.social-links ul li {
+  margin: 0 15px 0 0;
+  position: relative;
+  font-size: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.social-links ul li a {
+  text-decoration: none;
+}
+
+.social-links ul li a i {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Media */
+/* 0(s) -sm- ; max-cont-w none 540 */
+/* -md- -lg- -xl- ; max-cont-w 720 960 1140 */
+/*# sourceMappingURL=style.css.map */

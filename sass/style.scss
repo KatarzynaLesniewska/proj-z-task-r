@@ -1,5 +1,8 @@
 /* Variables */
 
+$color-dark: #000000;
+$font-light: #ffffff;
+
 
 /* Global */ 
 
@@ -19,18 +22,27 @@
         margin: 0;
         list-style-type: none;
         display: flex;
+        align-items: center;
+        justify-content: left;
         
         li {
             margin: 0 15px 0 0;
             position: relative;
             font-size: 0;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $color-dark;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
             
             a {
                text-decoration: none;
                
                i {
                    font-size: 16px;
+                   color: $font-light;
                 }
             }
         }
