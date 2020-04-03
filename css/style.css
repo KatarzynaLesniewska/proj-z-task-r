@@ -4,6 +4,70 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+/* Header */
+header {
+  background-image: url(https://images.pexels.com/photos/3337202/pexels-photo-3337202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header nav {
+  margin-bottom: 150px;
+}
+
+header .splash-caption {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+header .splash-caption h2 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 30;
+}
+
+header .splash-caption h1 {
+  font-size: 70px;
+  font-family: "Gotu", sans-serif;
+}
+
+header .splash-caption a {
+  color: #ffffff;
+}
+
+/* Navigation */
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation ul li {
+  margin: 0 25px 0 0;
+  display: inline-block;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* Footer */
 .social-links {
   padding: 20px 0;

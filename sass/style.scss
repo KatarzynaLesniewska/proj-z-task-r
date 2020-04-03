@@ -2,6 +2,8 @@
 
 $color-dark: #000000;
 $font-light: #ffffff;
+$font-header: 'Gotu', sans-serif;
+$font-text: 'Montserrat', sans-serif;
 
 
 /* Global */ 
@@ -10,6 +12,74 @@ $font-light: #ffffff;
 	box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+} 
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+/* Header */
+
+header {
+    background-image: url(https://images.pexels.com/photos/3337202/pexels-photo-3337202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center center;
+    background-size: cover;
+    color: $font-light;
+
+    nav {
+        margin-bottom: 150px;
+    }
+
+    .splash-caption {
+        text-align: center;
+        margin-bottom: 100px;
+
+        h2 {
+            font-size: 40px;
+            font-family: $font-text;
+            font-weight: 30;
+        } 
+
+        h1 {
+            font-size: 70px;
+            font-family: $font-header;
+        }
+
+        a {
+            color: $font-light;
+        }
+    }
+}
+
+/* Navigation */
+
+.navigation {
+
+    ul {
+        list-style-type: none;
+        
+        li {
+            margin: 0 25px 0 0;
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: $font-light;
+            }
+        }
+    }
+}
 
 /* Footer */
 
