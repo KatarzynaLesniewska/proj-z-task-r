@@ -1,0 +1,51 @@
+/* Variables */
+
+
+/* Global */ 
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
+/* Footer */
+
+.social-links {
+    padding: 20px 0;
+    text-align: center;
+    
+    ul { 
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        
+        li {
+            margin: 0 15px 0 0;
+            position: relative;
+            font-size: 0;
+            display: inline-block;
+            
+            a {
+               text-decoration: none;
+               
+               i {
+                   font-size: 16px;
+                }
+            }
+        }
+    }
+} 
+
+
+
+
+/* Media */ 
+
+@media (max-width: 767px) {
+
+}                                                       /* 0(s) -sm- ; max-cont-w none 540 */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}                                                       /* -md- -lg- -xl- ; max-cont-w 720 960 1140 */ 
