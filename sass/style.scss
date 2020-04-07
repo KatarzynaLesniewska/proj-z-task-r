@@ -1,9 +1,14 @@
 /* Variables */
 
-$color-dark: #000000;
-$font-light: #ffffff;
+$color-dark: #2d3436;
+$color-light: #dfe6e9;
+$color-white: #ffffff;
+$color-golden: #fdcb6e;
+$color-p: #636e72;
+$font-light: #dfe6e9;
 $font-header: 'Gotu', sans-serif;
 $font-text: 'Montserrat', sans-serif;
+$font-lobster: 'Lobster', cursive;
 
 
 /* Global */ 
@@ -23,22 +28,48 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
-.section {
+section {
     padding: 60px 0;
+} 
+
+.row {
+    margin: 100px 0 50px 0;
+} 
+
+p {
+    color: $color-p;
+    font-family: $font-text;
+    margin: 0;
+} 
+
+h2 {
+    font-family: $font-header;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 /* Header */
 
 header {
-    background-image: url(https://images.pexels.com/photos/3337202/pexels-photo-3337202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center center;
     background-size: cover;
     color: $font-light;
+    padding:0 0 40px 0;
 
     nav {
         margin-bottom: 150px;
+
+        .container {
+
+            .row3 {
+                margin-top: 0;
+            }
+        }
     }
 
     .splash-caption {
@@ -54,9 +85,19 @@ header {
         h1 {
             font-size: 70px;
             font-family: $font-header;
+        } 
+
+        .btn {
+            background-color: $color-golden;
+            display: inline-block;
+            padding: 15px 32px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         a {
+            text-decoration: none;
             color: $font-light;
         }
     }
@@ -66,11 +107,43 @@ header {
 
 .navigation {
 
+    .container { 
+
+        div {
+            margin-top: 20px;
+        } 
+
+        .col-md-3 { 
+
+            ul {
+                margin-top: 4px;
+                
+                li {
+                    font-family: $font-lobster;
+                    font-weight: lighter;
+
+                    a {
+                        color: $color-golden;
+                        font-size: 25px;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+
+        .col-md-8 {
+
+            ul {
+                padding-left: 150px;
+            }
+        }
+    }
+
     ul {
         list-style-type: none;
         
         li {
-            margin: 0 25px 0 0;
+            margin: 0 35px 0 0;
             display: inline-block;
 
             a {
@@ -85,26 +158,77 @@ header {
 
 .Services {
 
-    .container {
-        text-align: center;
+    .col-4 {
+
+        div { 
+            position: relative;
+
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: inherit;
+                color: $color-golden;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: solid 2px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
     }
 
-    .row {
+}
 
-        .box {
-            display: inline-block;
+/* Our Portfolio */
+
+.OurPortfolio {
+    background-color: $color-light;
+
+    .row2 {
+        margin-top: 40px;
+    }
+
+    .col-4 {
+
+        div {
+            background-color: $color-white;
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+                padding-bottom: 30px;
+            }
+        }
+    }
+} 
+
+/* Footer */
+
+.page-footer {
+
+    .container {
+
+        div {
+            margin: 10px 0;
+
+            p {
+                margin-top: 40px;
+            }
         }
     }
 }
-
-/* Footer */
 
 .social-links {
     padding: 20px 0;
     text-align: center;
     
     ul { 
-        padding: 0;
+        padding: 0 0 0 60px;
         margin: 0;
         list-style-type: none;
         display: flex;
@@ -119,16 +243,16 @@ header {
             align-items: center;
             justify-content: center;
             background: $color-dark;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             
             a {
                text-decoration: none;
                
                i {
-                   font-size: 16px;
-                   color: $font-light;
+                   font-size: 17px;
+                   color: $color-white;
                 }
             }
         }
