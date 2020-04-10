@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* Global */
 *, *::before, *::after {
@@ -125,37 +126,84 @@ header .splash-caption a {
 }
 
 /* Services */
+.Services {
+  /* to jest element html (div?) o klasie która powinna być BOX - okazuje się że na kolumny też działa */
+}
+
+.Services .col-4 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  /* te trzy centrują znaczek ikonki w box/divie/tutaj w kolumnie; align-items: center; ZMIENIA Z WIERSZA NA KOLUMNĘ!!!  */
+  /* to jest div-rodzic dla dziecka icony; nazwa clasy tego diva jakakolwiek może być */
+}
+
 .Services .col-4 .icon {
-  width: 300px;
-  height: 50px;
-  margin-bottom: 5px;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.Services .col-4 div {
-  position: relative;
-}
-
-.Services .col-4 div i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate -50%, -50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  background: inherit;
-  color: #fdcb6e;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 100%;
+  background: inherit;
+  color: #fdcb6e;
   border: solid 2px;
   font-size: 30px;
   font-weight: bold;
+  /*
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate (-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: inherit;
+            color: $color-golden;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: solid 2px;
+            font-size: 30px;
+            font-weight: bold;
+            */
+  /*
+            width:300px;
+            height:50px;
+            margin-bottom: 5px;
+            padding-bottom:10px;
+            position: relative;
+            */
+}
+
+.Services .col-4 div {
+  /* position: relative; */
+}
+
+.Services .col-4 div i {
+  /*
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate (-50%, -50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: inherit;
+                color: $color-golden;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: solid 2px;
+                font-size: 30px;
+                font-weight: bold; 
+                */
 }
 
 /* Our Portfolio */
