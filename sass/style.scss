@@ -10,7 +10,6 @@ $font-header: 'Gotu', sans-serif;
 $font-text: 'Montserrat', sans-serif;
 $font-lobster: 'Lobster', cursive;
 
-
 /* Global */ 
 
 *, *::before, *::after {
@@ -180,6 +179,9 @@ header {
             border: solid 2px;
             font-size: 30px;
             font-weight: bold;
+        }
+    }
+}
 
             /*
             position: absolute;
@@ -207,11 +209,11 @@ header {
             position: relative;
             */ 
         
-            div { 
-            /* position: relative; */
+            /* div { 
+             position: relative; */
 
-            i { 
-                /*
+            /*i { 
+                
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -227,12 +229,12 @@ header {
                 border: solid 2px;
                 font-size: 30px;
                 font-weight: bold; 
-                */
+                
             }
         }
     }
 
-}
+} */
 
 /* Our Portfolio */
 
@@ -312,15 +314,12 @@ header {
     }
 } 
 
+/* Media
 
+    0(s) -sm- ; max-cont-w none 540 
+    -md- -lg- -xl- ; max-cont-w 720 960 1140
 
+    @media (max-width: 767px) {}                 
 
-/* Media */ 
-
-@media (max-width: 767px) {
-
-}                                                       /* 0(s) -sm- ; max-cont-w none 540 */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}                                                       /* -md- -lg- -xl- ; max-cont-w 720 960 1140 */ 
+    @media (min-width: 768px) and (max-width: 991px) {} 
+*/

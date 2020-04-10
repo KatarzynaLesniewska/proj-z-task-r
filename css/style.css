@@ -156,7 +156,9 @@ header .splash-caption a {
   border: solid 2px;
   font-size: 30px;
   font-weight: bold;
-  /*
+}
+
+/*
             position: absolute;
             top: 50%;
             left: 50%;
@@ -173,21 +175,17 @@ header .splash-caption a {
             font-size: 30px;
             font-weight: bold;
             */
-  /*
+/*
             width:300px;
             height:50px;
             margin-bottom: 5px;
             padding-bottom:10px;
             position: relative;
             */
-}
-
-.Services .col-4 div {
-  /* position: relative; */
-}
-
-.Services .col-4 div i {
-  /*
+/* div { 
+             position: relative; */
+/*i { 
+                
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -203,9 +201,12 @@ header .splash-caption a {
                 border: solid 2px;
                 font-size: 30px;
                 font-weight: bold; 
-                */
-}
+                
+            }
+        }
+    }
 
+} */
 /* Our Portfolio */
 .OurPortfolio {
   background-color: #dfe6e9;
@@ -279,7 +280,13 @@ header .splash-caption a {
   color: #ffffff;
 }
 
-/* Media */
-/* 0(s) -sm- ; max-cont-w none 540 */
-/* -md- -lg- -xl- ; max-cont-w 720 960 1140 */
+/* Media
+
+    0(s) -sm- ; max-cont-w none 540 
+    -md- -lg- -xl- ; max-cont-w 720 960 1140
+
+    @media (max-width: 767px) {}                 
+
+    @media (min-width: 768px) and (max-width: 991px) {} 
+*/
 /*# sourceMappingURL=style.css.map */
